@@ -99,3 +99,40 @@ To exit out of dquote, type a single quotation mark (") and press enter.
 8. Conclusion
 In conclusion, the Whole Person Health Aging Data Analysis project allows users to analyze and cluster data related to healthy aging. This user manual has provided step-by-step instructions on how to install, set up, and use the project effectively. By following the guidelines outlined in this manual, users can gain valuable insights into the clustering of activities and further their understanding of healthy aging.
 
+
+
+
+
+
+Repository Cloning:
+To install the project, you need to close the repository from the provided link.
+https://github.com/dussec/whole-person-health-aging-data-analysis.git
+
+Instructions on how to clone a github repository can be found here: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository
+Note: you may skip steps 1-3 since the link has been provided for you already.
+Compiling the code: 
+Go to the terminal and find the directory of the project folder.
+Go to whole-person-healthy-aging > HealthyAgingProject > src > testing_commit
+Run the following command line prompts:
+javac -cp . Person.java TScore.java Clusterer.java Clustering.java
+javac -cp "/path/to/lib/*" DataImport.java/b
+Replace "/path/to/lib/" with the actual file path of the "lib" folder under "whole-person-healthy-aging" > "HealthyAgingProject" on your computer. Make sure the file path ends with "/lib/".
+Running the code:
+Navigate to the "bin" directory in the project folder: "whole-person-healthy-aging" > "HealthyAgingProject" > "bin" > "testing_commit".
+Run the following command line prompts:
+java -cp "/path/to/lib/*:/path/to/bin" testing_commit.DataImport "file/path/of/your/excel/file"
+Copy and paste the file path of the lib folder in the project direct and the bin folder in the format above. 
+Enter the file path of the excel sheet you will be running the algorithm for as an argument for DataImport.
+java -cp "path/to/lib/*:/path/to/bin" testing_commit.Clustering arg
+For arg, replace it with an int value (for example: 10), this will be the argument passed into the Clustering class, the int value you pass in, represents the amount of top activities found in each cluster that will be printed.
+If the code runs successfully, the terminal should output: "Results written to text file successfully!" To verify the results, navigate to your computer's file system and locate a file named "output.txt". The output of the code will be saved in this file. Check the number of activities listed for each cluster.
+
+Common Errors:
+If you get an error like the following:  
+It is most likely an issue with the directory that you passed in, make sure it is formatted correctly and confirm that it is the right directory.
+If you get the “dquote” error:
+It is a problem with the formatting of your command line prompt, make sure the spacing matches the directions. Also make sure that you use straight quotation marks ("") instead of (“ ”).
+To exit out of dquote, type a single quotation mark (") and press enter.
+
+
+

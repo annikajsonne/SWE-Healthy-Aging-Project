@@ -1,4 +1,4 @@
-#imports data from database
+//imports data from database
 
 import java.io.File;
 import java.io.FileInputStream;

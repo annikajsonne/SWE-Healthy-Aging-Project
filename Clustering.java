@@ -1,4 +1,4 @@
-package testing_commit;
+//reads from SQLite database, sets up for cluster creation, creates results, makes file and output
 
 import java.sql.*;
 import java.util.*;
